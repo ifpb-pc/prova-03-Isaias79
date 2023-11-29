@@ -2,7 +2,7 @@
 import pytest
 import mock
 import builtins
-from main import q1,q2,q3,q4
+from main import q1, q2, q3, q4
 
 @pytest.mark.parametrize("idades, esperado", [
     ({"João Pessoa": 432, "Campina Grande": 325, "Santa Rita": 68, "Patos": 289}, ["João Pessoa", "Campina Grande", "Patos"]),
@@ -25,6 +25,7 @@ def test_q2(lista1, lista2, soma_esperada, resultado_esperado):
     soma, resultado = q2(lista1, lista2)
     assert soma == soma_esperada
     assert resultado == resultado_esperado
+    
 
 
 
